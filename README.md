@@ -6,6 +6,11 @@ Small project for using coronavirus epidemic data and SIR model to simluate.
 Wiki:
 [https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 
+SIR model is simulated by ode45.
+We test several beta and gamma within a specific range.
+
+This code mainly based on NumPy, SciPy, Pandas, and Matplotlib.
+
 ## Dataset
 
 疫情数据由澎湃新闻美数课整理提供:
