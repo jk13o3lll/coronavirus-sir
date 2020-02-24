@@ -90,9 +90,9 @@ ax.yaxis.label.set_color('red')
 ax2.yaxis.label.set_color('blue')
 ax.legend(loc='upper left')
 ax2.legend(loc='upper right')
-for beta in np.arange(0.3, 0.9, 0.01): # 1000
-    # for gamma in 1 / np.arange(5, 20, 0.1): # 1000
-    for gamma in np.arange(0.3, 0.9, 0.01): # 1000
+for beta in np.arange(0.5, 1.0, 0.1): # 1000
+    for gamma in 1 / np.arange(5, 20, 0.1): # 1000
+    # for gamma in np.arange(0.4, 0.9, 0.1): # 1000
         # define model
         def sir(t, y):
             dydt = np.empty(3, dtype=np.float64)
@@ -116,7 +116,8 @@ for beta in np.arange(0.3, 0.9, 0.01): # 1000
         # ax.set_ylim([1.1*min1-0.1*max1, 1.3*max1-0.3*min1])
         # ax2.set_ylim([1.1*min2-0.1*max2, 1.3*max2-0.3*min2])
         plt.draw()
-        plt.pause(0.001)
+        # plt.pause(0.001)
+        plt.show(10)
         print('%.3f\t%.3f' % (beta, gamma))
 
 # start to drop until almost all infected
