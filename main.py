@@ -45,7 +45,9 @@ S = N - I - R
 
 # plot
 dates = matplotlib.dates.date2num(wuhan['datetime'].values)
-t = np.insert(np.cumsum(dates[1:] - dates[:-1]), 0, 0)
+t = np.cumsum(np.ediff1d(dates, to_begin=0))
+print(t)
+# t = np.insert(np.cumsum(dates[1:] - dates[:-1]), 0, 0)
 fig, ax = plt.subplots()
 lR = ax.plot_date(dates, R, 'r.', label='R')
 lI = ax.plot_date(dates, I, 'r+', label='I')
@@ -115,9 +117,8 @@ for beta in np.arange(0.5, 1.0, 0.1): # 1000
         # min2, max2 = min(min20, min2), max(max20, max2)
         # ax.set_ylim([1.1*min1-0.1*max1, 1.3*max1-0.3*min1])
         # ax2.set_ylim([1.1*min2-0.1*max2, 1.3*max2-0.3*min2])
-        plt.draw()
-        # plt.pause(0.001)
-        plt.show(10)
+        plt.pause(0.001)
+        # plt.draw()
         print('%.3f\t%.3f' % (beta, gamma))
 
 # start to drop until almost all infected
