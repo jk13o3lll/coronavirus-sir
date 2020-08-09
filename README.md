@@ -26,3 +26,7 @@ The infected numbers start to drop until mosts of population are infected.
 ![beta_0_7_gamma_0_4](figures/beta_0_7_gamma_0_4.png)
 ![beta_0_8_gamma_0_3](figures/beta_0_8_gamma_0_3.png)
 ![beta_0_8_gamma_0_3_fullscale](figures/beta_0_8_gamma_0_3_fullscale.png)
+
+## Contact
+
+ccwang.jack@gmail.com
