@@ -13,7 +13,7 @@ This code mainly based on NumPy, SciPy, Pandas, and Matplotlib.
 
 ## Dataset
 
-疫情数据由澎湃新闻美数课整理提供:
+疫情數據由澎派新聞美數課整理提供:
 [https://github.com/839Studio/Novel-Coronavirus-Updates](https://github.com/839Studio/Novel-Coronavirus-Updates)
 
 ## Results
